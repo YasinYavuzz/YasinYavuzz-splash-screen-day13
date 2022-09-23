@@ -12,8 +12,8 @@ class HomeWidget extends StatefulWidget {
 class _HomeWidgetState extends State<HomeWidget> {
   // ListView tanımladığımız için verilerin dinamik getirmemiz gerekiyor. o yapılarıda buradaki listelerden seçiyoruz.
   List<String> _songArtist = [
-    "Juice Wrld, Drake, Kendrick",
-    "Joji, The KID LAROI",
+    "Juice Wrld, Drake, Kendrick lamar and more...",
+    "Joji, The KID LAROI, Tate McRae and more...",
     "Lamar and more..."
   ];
   List<String> _songType = ["Hip Hop Mix", "Moody Mix", "Moody Mix"];
@@ -135,6 +135,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                             child: Image.asset('assets/friday.png'),
                           ),
                           Container(
+                            margin: EdgeInsets.only(left: 20),
                               child: Text(
                             'New songs',
                             style: TextStyle(color: Colors.grey, fontSize: 12),
@@ -214,17 +215,20 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 '${_songType[index]}',
                                 style: TextStyle(
                                   color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18
                                 ),
                               ),
                             ),
                             Container(
+                              height:27,
                               alignment: Alignment.centerLeft,
                               margin: EdgeInsets.only(top: 7, left: 16),
                               child: Text(
                                 '${_songArtist[index]}',
                                 style: TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 11,
+                                  color: Color(0xffDADADA),
+                                  fontSize: 12,
                                 ),
                               ),
                             ),

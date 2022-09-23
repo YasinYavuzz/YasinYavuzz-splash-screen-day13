@@ -49,7 +49,7 @@ class _TopHitsState extends State<TopHits> {
             Stack(
               children: [
                 Container(
-                  width: 390,
+                  width: double.infinity,
                   height: 370,
                   decoration: BoxDecoration(
                     border: Border(

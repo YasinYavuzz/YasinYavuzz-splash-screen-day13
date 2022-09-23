@@ -26,7 +26,7 @@ class _LibraryWidgetState extends State<LibraryWidget> {
   List<String> _playlistPhoto = [
     "assets/playlist1.png",
     "assets/playlist2.png",
-    "assets/playlist1.png",
+    "assets/playlist3.png",
     "assets/playlist4.png"
   ];
   List<String> _playlistText = [

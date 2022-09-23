@@ -576,6 +576,7 @@ class _SearchWidgetState extends State<SearchWidget> {
               ),
             ),
             GridView.count(
+              padding: EdgeInsets.all(0),
               childAspectRatio: MediaQuery.of(context).size.width /
                   (MediaQuery.of(context).size.height / 3.8),
               crossAxisCount: 2,
