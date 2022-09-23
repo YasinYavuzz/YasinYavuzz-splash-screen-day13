@@ -163,22 +163,26 @@ class _TopHitsState extends State<TopHits> {
                               child: Image.asset('${_albumPhoto[index]}'),
                             ),
                             Container(
+                              width: 200,
+                              padding: EdgeInsets.all(0),
+                              alignment: Alignment.topLeft,
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
                                     margin: EdgeInsets.only(top: 30, right: 50),
                                     child: Text(
                                       '${_songName[index]}',
-                                      textAlign: TextAlign.center,
+                                      //textAlign: TextAlign.center,
                                       style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 20,
+                                          fontSize: 19,
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                   Container(
                                     alignment: Alignment.topLeft,
-                                    margin: EdgeInsets.only(top: 5, right: 50),
+                                    margin: EdgeInsets.only(top: 8, right: 50),
                                     child: Text(
                                       '${_artists[index]}',
                                       textAlign: TextAlign.start,

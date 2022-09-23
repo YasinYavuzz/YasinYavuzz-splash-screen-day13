@@ -40,25 +40,28 @@ class _GetStartedState extends State<GetStarted> {
                 ),
               ),
               Container(
-                width: double.infinity, // containerın genişliğini tüm ekran genişliği veriyoruz
-                margin: EdgeInsets.only(top: 35, left: 5, right: 5),
+                //width: double.infinity, // containerın genişliğini tüm ekran genişliği veriyoruz
+                margin: EdgeInsets.only(top: 20, left: 10, right: 10),
                 //alignment: Alignment.bottomCenter,
                 child: Text(
                   ' A digital music, podcast, and video service that gives you access to millions of songs and other content from creators all over the world.',
                   textAlign: TextAlign.center, // yazının ortalanması için kullanıyoruz
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
+                    letterSpacing: 1.5,
+                    color: Color(0xffDADADA),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    
                   ),
                 ),
               ),
               Container(
-                width: 250,
+                width: 350,
                 height: 50,
-                margin: EdgeInsets.only(bottom: 50, top: 30),
+                margin: EdgeInsets.only(bottom: 50, top: 25),
                 //alignment: Alignment.bottomCenter,
                 decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: Color(0xff1ED760),
                     borderRadius: BorderRadius.circular(40)),
                 child: GestureDetector( // Buradaki butona onTap tıklanma özelliği kazandırıyoruz.
                   onTap: () {

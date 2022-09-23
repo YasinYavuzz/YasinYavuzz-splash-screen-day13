@@ -27,6 +27,16 @@ class _HomeWidgetState extends State<HomeWidget> {
     "assets/artist.png",
     "assets/artist.png"
   ];
+  List<String> _stackItemsVertical = [
+    "assets/pinkStackVertical.png",
+    "assets/yellowStackVertical.png",
+    "assets/pinkStackVertical.png"
+  ];
+  List<String> _stackItemsHorizontal = [
+    "assets/pinkStackHorizontal.png",
+    "assets/yellowStackHorizontal.png",
+    "assets/pinkStackHorizontal.png"
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -171,9 +181,31 @@ class _HomeWidgetState extends State<HomeWidget> {
                         ),
                         child: Column(
                           children: [
-                            Container(
-                              alignment: Alignment.topCenter,
-                              child: Image.asset(_albumPhoto[index]),
+                            Stack(
+                              children: [
+                                Container(
+                                alignment: Alignment.topCenter,
+                                child: Image.asset(_albumPhoto[index]),
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                left: 15,
+                                
+                                  //margin: EdgeInsets.only(top: 110),
+                                  //alignment: Alignment.bottomCenter,
+                                child: Image.asset('${_stackItemsHorizontal[index]}'),
+                                
+                              ),
+                              Positioned(
+                                bottom: 20,
+                                left: 15,
+                                
+                                  //margin: EdgeInsets.only(top: 110),
+                                  //alignment: Alignment.bottomCenter,
+                                child: Image.asset('${_stackItemsVertical[index]}'),
+                                
+                              ),
+                              ],
                             ),
                             Container(
                               alignment: Alignment.centerLeft,

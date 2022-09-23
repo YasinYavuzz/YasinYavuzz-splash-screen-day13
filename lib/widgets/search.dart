@@ -577,16 +577,16 @@ class _SearchWidgetState extends State<SearchWidget> {
             ),
             GridView.count(
               childAspectRatio: MediaQuery.of(context).size.width /
-                  (MediaQuery.of(context).size.height / 3.5),
+                  (MediaQuery.of(context).size.height / 3.8),
               crossAxisCount: 2,
-              crossAxisSpacing: 7,
-              mainAxisSpacing: 7,
+              crossAxisSpacing: 0,
+              mainAxisSpacing: 0,
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               children: [
                 Container(
                   padding: const EdgeInsets.all(25),
-                  margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  margin: EdgeInsets.only(left: 15, top: 10, right: 15),
                   width: 20,
                   height: 20,
                   // color: Color.fromARGB(255, 49, 175, 154),
@@ -606,7 +606,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(25),
-                  margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  margin: EdgeInsets.only(left: 15, top: 10, right: 15),
                   width: 20,
                   height: 20,
                   // color: Color.fromARGB(255, 49, 175, 154),
@@ -627,7 +627,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(25),
-                  margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  margin: EdgeInsets.only(left: 15, top: 10, right: 15),
                   width: 20,
                   height: 20,
                   // color: Color.fromARGB(255, 49, 175, 154),
@@ -648,7 +648,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(25),
-                  margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  margin: EdgeInsets.only(left: 15, top: 10, right: 15),
                   width: 20,
                   height: 20,
                   // color: Color.fromARGB(255, 49, 175, 154),
@@ -669,7 +669,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(25),
-                  margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  margin: EdgeInsets.only(left: 15, top: 10, right: 15),
                   width: 20,
                   height: 20,
                   // color: Color.fromARGB(255, 49, 175, 154),
@@ -690,7 +690,7 @@ class _SearchWidgetState extends State<SearchWidget> {
                 ),
                 Container(
                   padding: const EdgeInsets.all(25),
-                  margin: EdgeInsets.only(left: 10, top: 10, right: 10),
+                  margin: EdgeInsets.only(left: 15, top: 10, right: 15),
                   width: 20,
                   height: 20,
                   // color: Color.fromARGB(255, 49, 175, 154),
